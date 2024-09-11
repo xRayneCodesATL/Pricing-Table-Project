@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Khand", sans-serif;
+      color: whitesmoke;
+      background-color: #97cecc;
+    }
+
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+    }
+
+    .pricing-plan {
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #0f0f1e;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .plan-title {
+      font-size: 2.25rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .top-banner-1 {
+      background-color: teal;
+      border-radius: 8px;
+    }
+
+    .top-banner-2 {
+      background-color: #c4421a;
+      border-radius: 8px;
+    }
+
+    .top-banner-3 {
+      background-color: #16594a;
+      border-radius: 8px;
+    }
+
+    p {
+      font-size: 1.15rem;
+    }
+
+    .plan-price {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .plan-features li {
+      margin-bottom: 20px;
+    }
+
+    .plan-button {
+      padding: 10px;
+      background-color: salmon;
+      color: black;
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="top-banner-1">
+        <div class="plan-title">BASIC</div>
+      </div>
+      <div class="plan-price">$4.99/month</div>
+      <p>Suitable for beginners</p>
+      <ul class="plan-features">
+        <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2cf16e"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg> 10GB Storage</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2cf16e"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg> 1 User</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q54 0 104-17.5t92-50.5L228-676q-33 42-50.5 92T160-480q0 134 93 227t227 93Zm252-124q33-42 50.5-92T800-480q0-134-93-227t-227-93q-54 0-104 17.5T284-732l448 448Z"/></svg> Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="top-banner-2">
+        <div class="plan-title">STANDARD</div>
+      </div>
+      <div class="plan-price">$10.99/month</div>
+      <p>Suitable for freelancers</p>
+      <ul class="plan-features">
+        <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2cf16e"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg> 25GB Storage</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2cf16e"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg> 5 Users</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2cf16e"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg> Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="top-banner-3">
+      <div class="plan-title"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="goldenrod"><path d="m387-412 35-114-92-74h114l36-112 36 112h114l-93 74 35 114-92-71-93 71ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm240-280q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z"/></svg>
+        PREMIUM
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="goldenrod"><path d="m387-412 35-114-92-74h114l36-112 36 112h114l-93 74 35 114-92-71-93 71ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm240-280q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z"/></svg></div>
+        </div>
+      <div class="plan-price">$59.99/month</div>
+      <p>Suitable for businesses</p>
+      <ul class="plan-features">
+        <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2cf16e"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg> 100GB Storage</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2cf16e"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg> 50 Users</li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2cf16e"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg> 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
